@@ -1,0 +1,15 @@
+com.google.android.apps.assistant
+com.android.chrome
+com.att.deviceunlock
+com.google.android.apps.tachyon
+com.google.android.gm.lite
+com.google.android.apps.photosgo
+com.google.android.apps.searchlite
+com.hbo.hbonow
+com.facebook.lite
+com.google.android.apps.mapslite
+com.android.messaging
+com.android.dialer
+com.android.vending
+com.google.android.youtube
+com.google.android.apps.youtube.music

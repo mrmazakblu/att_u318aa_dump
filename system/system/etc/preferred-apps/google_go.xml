@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<preferred-activities>
+    <item name="com.google.android.apps.photosgo/.home.HomeActivity">
+        <filter>
+            <action name="android.intent.action.MAIN" />
+            <cat name="android.intent.category.APP_GALLERY" />
+            <cat name="android.intent.category.DEFAULT" />
+        </filter>
+    </item>
+    <item name="com.google.android.apps.photosgo/.oneup.ExternalOneUpActivity">
+        <filter>
+            <action name="android.intent.action.VIEW" />
+            <cat name="android.intent.category.DEFAULT" />
+            <!-- get from /libcore/luni/src/main/java/libcore/net/MimeUtils.java, because "image/*" "image/" "image" invalid -->
+            <type name="image/bmp" />
+            <type name="image/gif" />
+            <type name="image/ico" />
+            <type name="image/ief" />
+            <type name="image/jpeg" />
+            <type name="image/pcx" />
+            <type name="image/png" />
+            <type name="image/svg+xml" />
+            <type name="image/tiff" />
+            <type name="image/vnd.djvu" />
+            <type name="image/vnd.wap.wbmp" />
+            <type name="image/webp" />
+            <type name="image/x-adobe-dng" />
+            <type name="image/x-canon-cr2" />
+            <type name="image/x-cmu-raster" />
+            <type name="image/x-coreldraw" />
+            <type name="image/x-coreldrawpattern" />
+            <type name="image/x-coreldrawtemplate" />
+            <type name="image/x-corelphotopaint" />
+            <type name="image/x-fuji-raf" />
+            <type name="image/x-icon" />
+            <type name="image/x-jg" />
+            <type name="image/x-jng" />
+            <type name="image/x-ms-bmp" />
+            <type name="image/x-nikon-nef" />
+            <type name="image/x-nikon-nrw" />
+            <type name="image/x-olympus-orf" />
+            <type name="image/x-panasonic-rw2" />
+            <type name="image/x-pentax-pef" />
+            <type name="image/x-photoshop" />
+            <type name="image/x-portable-anymap" />
+            <type name="image/x-portable-bitmap" />
+            <type name="image/x-portable-graymap" />
+            <type name="image/x-portable-pixmap" />
+            <type name="image/x-rgb" />
+            <type name="image/x-samsung-srw" />
+            <type name="image/x-sony-arw" />
+            <type name="image/x-xbitmap" />
+            <type name="image/x-xpixmap" />
+            <type name="image/x-xwindowdump" />
+            <!-- get from Photos AndroidManifest.xml -->
+            <type name="video/3gpp" />
+            <type name="video/3gpp" />
+            <type name="video/3gpp2" />
+            <type name="video/avi" />
+            <type name="video/mp4" />
+            <type name="video/mpeg" />
+            <type name="video/mpeg4" />
+            <type name="video/quicktime" />
+            <type name="video/webm" />
+            <type name="video/x-matroska" />
+        </filter>
+    </item>
+</preferred-activities>

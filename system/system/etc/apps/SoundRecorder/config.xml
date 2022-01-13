@@ -1,0 +1,9 @@
+<resources module="platform" configVersion="1.0.0.0" requirementsVersion="0.1">
+    <feature id="recorder_list_rename_enable" title="recorder_list_rename_enable">
+        <bool name="platform_q_recorder_list_rename_enable" value="true"/>
+    </feature>
+    <feature id = "recorder_ui_use_rec" title="record_postfix" >
+        <bool name = "recorder_use_rec_replace_name" value="true"></bool>
+        <bool name = "recorder_use_rec_icon_blink" value="true"></bool>
+    </feature>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+
+  <privapp-permissions package="com.facebook.system">
+    <permission name="android.permission.REAL_GET_TASKS"/>
+    <permission name="android.permission.INSTALL_PACKAGES"/>
+    <permission name="android.permission.DELETE_PACKAGES"/>
+    <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+  </privapp-permissions>
+  <allow-in-power-save-except-idle package="com.facebook.appmanager" />
+</permissions>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plmn>
+    <apn carrier="中国移动">
+        <mccmnc>46000</mccmnc>
+        <spn>CMCC</spn>
+    </apn>
+    <apn carrier="中国移动">
+        <mccmnc>46000</mccmnc>
+        <spn>China Mobile</spn>
+    </apn>
+    <apn carrier="movistar">
+        <mccmnc>21405</mccmnc>
+        <spn>movistar</spn>
+    </apn>
+    <apn carrier="movistar">
+        <mccmnc>21407</mccmnc>
+        <spn>movistar</spn>
+    </apn>
+    <apn carrier="Movistar">
+        <mccmnc>21407</mccmnc>
+        <spn>Movistar</spn>
+    </apn>
+    <apn carrier="movistar">
+        <mccmnc>21422</mccmnc>
+        <spn>movistar</spn>
+    </apn>
+</plmn>

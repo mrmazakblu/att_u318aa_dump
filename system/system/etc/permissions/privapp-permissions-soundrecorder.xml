@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+
+  <privapp-permissions package="com.ape.soundrecorder">
+    <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+	<permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+  </privapp-permissions>
+</permissions>

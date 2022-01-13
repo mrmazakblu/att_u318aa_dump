@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<virtualSpnOverridesByEfGid1 version="1">
+<virtualSpnOverride mccmncgid1="208014e524a31" name="Orange F"/>
+<virtualSpnOverride mccmncgid1="208104e524a31" name="C le mobile"/>
+<virtualSpnOverride mccmncgid1="208264e524a31" name="EI Telecom"/>
+<virtualSpnOverride mccmncgid1="208104d4f42494c45" name="ZERO FORFAIT/BUDGET"/>
+<virtualSpnOverride mccmncgid1="20810ae" name="REGLOMobile"/>
+<virtualSpnOverride mccmncgid1="2081012" name="CORIOLIS"/>
+<virtualSpnOverride mccmncgid1="20823524d4f31" name="Virgin FR"/>
+<virtualSpnOverride mccmncgid1="208104c504d" name="La Poste Mobile"/>
+<virtualSpnOverride mccmncgid1="208104e756d" name="Numericable"/>
+<virtualSpnOverride mccmncgid1="2081013" name="PRIXTEL"/>
+<virtualSpnOverride mccmncgid1="214030008" name="Euskaltel"/>
+<virtualSpnOverride mccmncgid1="214030009" name="RACC"/>
+<virtualSpnOverride mccmncgid1="2140616" name="Telecable Es"/>
+<virtualSpnOverride mccmncgid1="2140603" name="Eroski Es"/>
+<virtualSpnOverride mccmncgid1="2140604" name="Hits Es"/>
+<virtualSpnOverride mccmncgid1="2140606" name="BT IT"/>
+<virtualSpnOverride mccmncgid1="2140607" name="LOWI Es"/>
+<virtualSpnOverride mccmncgid1="20601a7ffffffffffffff" name="Telenet"/>
+<virtualSpnOverride mccmncgid1="2060175636831ffffffff" name="UPC"/>
+<virtualSpnOverride mccmncgid1="22201000000000000000001" name="tiscali mobile"/>
+<virtualSpnOverride mccmncgid1="22201000000000000000005" name="Coop Mobile"/>
+<virtualSpnOverride mccmncgid1="206014e524a31" name="Proximus"/>
+<virtualSpnOverride mccmncgid1="208104d4f42494c45" name="SFR"/>
+<virtualSpnOverride mccmncgid1="232050303" name="3 AT"/>
+<virtualSpnOverride mccmncgid1="2620102" name="telekom"/>
+<virtualSpnOverride mccmncgid1="262014a" name="lebara"/>
+<virtualSpnOverride mccmncgid1="26203ffffffffffffffff" name="blau"/>
+<virtualSpnOverride mccmncgid1="26207000602ffffffffffffffffffffffffffffffffff" name="Fonic"/>
+<virtualSpnOverride mccmncgid1="26207020902ffffffffffffffffffffffffffffffffff" name="blau"/>
+<virtualSpnOverride mccmncgid1="26207040502ffffffffffffffffffffffffffffffffff" name="yourfone"/>
+<virtualSpnOverride mccmncgid1="2343040" name="Virgin"/>
+<virtualSpnOverride mccmncgid1="2140301" name="PTV Telecom"/>
+<virtualSpnOverride mccmncgid1="4540001010000ffffffff" name="1O1O"/>
+<virtualSpnOverride mccmncgid1="4540001010000ffffffff" name="1O1O tethering"/>
+<virtualSpnOverride mccmncgid1="4540001020000ffffffff" name="csl"/>
+<virtualSpnOverride mccmncgid1="4540001020000ffffffff" name="csl tethering"/>
+<virtualSpnOverride mccmncgid1="4540001030000ffffffff" name="SUN Mobile"/>
+<virtualSpnOverride mccmncgid1="4540001040000ffffffff" name="Global Call"/>
+<virtualSpnOverride mccmncgid1="4540002020001ffffffff" name="csl prepaid"/>
+<virtualSpnOverride mccmncgid1="4540002030001ffffffff" name="csl prepaid"/>
+<virtualSpnOverride mccmncgid1="4540002020002ffffffff" name="csl prepaid"/>
+
+<virtualSpnOverride mccmncgid1="4540201010000ffffffff" name="1O1O"/>
+<virtualSpnOverride mccmncgid1="4540201010000ffffffff" name="1O1O tethering"/>
+<virtualSpnOverride mccmncgid1="4540201020000ffffffff" name="csl"/>
+<virtualSpnOverride mccmncgid1="4540201020000ffffffff" name="csl tethering"/>
+<virtualSpnOverride mccmncgid1="4540201030000ffffffff" name="SUN Mobile"/>
+<virtualSpnOverride mccmncgid1="4540201040000ffffffff" name="Global Call"/>
+<virtualSpnOverride mccmncgid1="4540202020001ffffffff" name="csl prepaid"/>
+<virtualSpnOverride mccmncgid1="4540202030001ffffffff" name="csl prepaid"/>
+<virtualSpnOverride mccmncgid1="4540202020002ffffffff" name="csl prepaid"/>
+
+<virtualSpnOverride mccmncgid1="4541001010000ffffffff" name="1O1O"/>
+<virtualSpnOverride mccmncgid1="4541001010000ffffffff" name="1O1O tethering"/>
+<virtualSpnOverride mccmncgid1="4541001020000ffffffff" name="csl"/>
+<virtualSpnOverride mccmncgid1="4541001020000ffffffff" name="csl tethering"/>
+<virtualSpnOverride mccmncgid1="4541001030000ffffffff" name="SUN Mobile"/>
+<virtualSpnOverride mccmncgid1="4541001040000ffffffff" name="Global Call"/>
+<virtualSpnOverride mccmncgid1="4541002020001ffffffff" name="csl prepaid"/>
+<virtualSpnOverride mccmncgid1="4541002030001ffffffff" name="csl prepaid"/>
+<virtualSpnOverride mccmncgid1="4541002020002ffffffff" name="csl prepaid"/>
+
+<virtualSpnOverride mccmncgid1="4541801010000ffffffff" name="1O1O"/>
+<virtualSpnOverride mccmncgid1="4541801010000ffffffff" name="1O1O tethering"/>
+<virtualSpnOverride mccmncgid1="4541801020000ffffffff" name="csl"/>
+<virtualSpnOverride mccmncgid1="4541801020000ffffffff" name="csl tethering"/>
+<virtualSpnOverride mccmncgid1="4541801030000ffffffff" name="SUN Mobile"/>
+<virtualSpnOverride mccmncgid1="4541801040000ffffffff" name="Global Call"/>
+<virtualSpnOverride mccmncgid1="4541802020001ffffffff" name="csl prepaid"/>
+<virtualSpnOverride mccmncgid1="4541802030001ffffffff" name="csl prepaid"/>
+<virtualSpnOverride mccmncgid1="4541802020002ffffffff" name="csl prepaid"/>
+
+<virtualSpnOverride mccmncgid1="5200001ff" name="TRUE-H"/>
+<virtualSpnOverride mccmncgid1="2321375617431ffffffff" name="UPC AT"/>
+<virtualSpnOverride mccmncgid1="64703F2330002" name="Free"/>
+<virtualSpnOverride mccmncgid1="20815F2330002" name="Free"/>
+<virtualSpnOverride mccmncgid1="20815F003" name="iliad Int"/>
+<virtualSpnOverride mccmncgid1="22250F003" name="iliad"/>
+</virtualSpnOverridesByEfGid1>

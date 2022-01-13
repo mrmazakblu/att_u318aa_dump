@@ -1,0 +1,11 @@
+on charger
+    trigger load_system_props_action
+    start kpoc_charger
+
+service kpoc_charger /system/bin/kpoc_charger
+    class charger
+    group system wakelock
+    capabilities BLOCK_SUSPEND SYS_ADMIN SYS_BOOT
+
+on load_system_props_action
+    load_system_props

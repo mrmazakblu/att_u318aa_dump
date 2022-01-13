@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configs>
+    <carrier name="ATT">
+        <folder name="folder" removeable="false">
+            <item name="folder" removeable="false">ATT Partner Bookmarks</item>
+        </folder>
+        <bookmark name="bookmark">
+            <item name="web_name" removeable="false">AT&amp;T Mobile Web</item>
+            <item name="web_site" removeable="false">https://home.att.com</item>
+        </bookmark>
+        <bookmark name="bookmark">
+            <item name="web_name" removeable="false"> AT&amp;T Trade-In</item>
+            <item name="web_site" removeable="false">http://www.att.com/trade-in</item>
+        </bookmark>
+        <bookmark name="bookmark">
+            <item name="web_name" removeable="false">Device Help</item>
+            <item name="web_site" removeable="false">https://www.att.com/devicehowto/index.html#!/?make=ATT&amp;model=ATTU318AA</item>
+        </bookmark>
+        <bookmark name="bookmark">
+            <item name="web_name" removeable="false">myAT&amp;T</item>
+            <item name="web_site" removeable="false">https://www.paygonline.com</item>
+        </bookmark>
+    </carrier>
+
+    <carrier name="Cricket">
+        <folder name="folder" removeable="false">
+            <item name="folder" removeable="false">Cricket Partner Bookmarks</item>
+        </folder>
+        <bookmark name="bookmark">
+            <item name="web_name" removeable="false">Cricket Help and Support</item>
+            <item name="web_site" removeable="false">http://www.cricketwireless.com/support</item>
+        </bookmark>
+        <bookmark name="bookmark">
+            <item name="web_name" removeable="false">CNN</item>
+            <item name="web_site" removeable="false">http://www.cnn.com</item>
+        </bookmark>
+        <bookmark name="bookmark">
+            <item name="web_name" removeable="false">Wikipedia</item>
+            <item name="web_site" removeable="false"> http://www.wikipedia.com</item>
+        </bookmark>
+        <bookmark name="bookmark">
+            <item name="web_name" removeable="false">ESPN</item>
+            <item name="web_site" removeable="false"> http://www.espn.com</item>
+        </bookmark>
+    </carrier>
+ </configs>

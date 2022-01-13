@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+  <privapp-permissions package="com.att.iqi">
+    <permission name="android.permission.LOCAL_MAC_ADDRESS"/>
+    <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+    <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+    <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <permission name="com.att.iqi.permission.ACCESS_BRIDGE"/>
+    <permission name="com.att.iqi.permission.RECEIVE_APP_STATE"/>
+    <permission name="com.att.iqi.permission.READPROC"/>
+    <permission name="com.att.iqi.permission.RECEIVE_CHANGE_UNLOCK_KEYCODE"/>
+  </privapp-permissions>
+</permissions>

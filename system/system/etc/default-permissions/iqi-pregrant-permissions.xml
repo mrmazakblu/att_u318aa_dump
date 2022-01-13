@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   Copyright (c) 2019 AT&T Intellectual Property. ALL RIGHTS RESERVED
+
+   This code is licensed under a personal license granted to you by AT&T.
+
+   All use must comply with the terms of such license. No unauthorized use,
+   copying, modifying or transfer is permitted without the express permission
+   of AT&T. If you do not have a copy of the license, you may obtain a copy
+   of such license from AT&T.
+-->
+
+<exceptions>
+    <exception package="com.att.iqi">
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false" />
+    </exception>
+</exceptions>

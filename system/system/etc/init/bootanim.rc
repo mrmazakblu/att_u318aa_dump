@@ -1,0 +1,24 @@
+service bootanim /system/bin/bootanimation
+    class core animation
+    user graphics
+    group graphics audio
+    disabled
+    oneshot
+    writepid /dev/stune/top-app/tasks
+
+# TINNO add by xiaolin.he 20191022 for shutdown animation & audio. port from MTK
+service banim_shutmp3 /system/bin/bootanimation shut mp3
+    class core animation
+    user graphics
+    group graphics audio
+    disabled
+    oneshot
+    writepid /dev/stune/top-app/tasks
+
+service banim_shutnomp3 /system/bin/bootanimation shut nomp3
+    class core animation
+    user graphics
+    group graphics audio
+    disabled
+    oneshot
+    writepid /dev/stune/top-app/tasks

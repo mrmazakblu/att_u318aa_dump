@@ -1,0 +1,18 @@
+# MTK connectivity .rc configure
+
+on post-fs-data
+
+
+#
+# Connectivity related device nodes & configuration (begin)
+#
+
+
+# BT debuglogger store in data area
+    mkdir /data/debuglogger 0775 system system
+    mkdir /data/debuglogger/connsyslog 0775 shell log
+    mkdir /data/debuglogger/connsyslog/bthci 0775 shell log
+
+
+
+

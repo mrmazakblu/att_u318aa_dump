@@ -1,0 +1,6 @@
+#configuration file
+conn_timeout=30
+dmacc_root=./DMS
+dmserver=att
+acc_configure_disabled=true
+first_di_delay=10000

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<voicemail>
+<voicemail numeric="20826" carrier="EI Telecom" vmnumber="777" vmtag="Messagerie vocale" />
+<voicemail numeric="20826" carrier="Orange F" vmnumber="777" vmtag="Messagerie vocale" />
+<voicemail numeric="20801" carrier="C le mobile" vmnumber="888" vmtag="Messagerie vocale" />
+<voicemail numeric="20810" carrier="C le mobile" vmnumber="123" vmtag="Messagerie vocale" />
+<voicemail numeric="22201" carrier="I TIM" vmnumber="41919" vmtag="Messagerie vocale" />
+<voicemail numeric="22299" carrier="3" vmnumber="4133" vmtag="Messagerie vocale" />
+<voicemail numeric="20820" carrier="Bouygues Telecom" vmnumber="+33660660001" vmtag="Messagerie vocale" />
+<voicemail numeric="21403" carrier="Orange" vmnumber="242" vmtag="Buzón de voz" />
+</voicemail>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <setting name="lockscreen_sounds_enabled" type="system" value="1" />
+  <setting name="wifi_scan_always_enabled" type="global" value="1" />
+  <setting name="status_bar_show_battery_percent" type="system" value="1" />
+  <setting name="screen_brightness_mode" type="system" value="1" />
+  <setting name="auto_time_zone" type="global" value="1" />
+  <setting name="font_scale" type="system" value="1.0" />
+  <setting name="screen_off_timeout" type="system" value="60000" />
+  <setting name="auto_time" type="global" value="1" />
+  <setting name="accelerometer_rotation" type="system" value="0" />
+  <setting name="haptic_feedback_enabled" type="system" value="1" />
+  <setting name="default_input_method" type="secure" value="com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME" />
+  <setting name="enabled_input_methods" type="secure" value="com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME:com.google.android.googlequicksearchbox/com.google.a" />
+  <setting name="backup_enabled" type="secure" value="0" />
+  <setting name="backup_transport" type="secure" value="com.google.android.gms/.backup.BackupTransportService" />
+  <setting name="screen_brightness" type="system" value="42" />
+  <setting name="date_format" type="system" value="MM/dd/yyyy" />
+  <setting name="lock_screen_lock_after_timeout" type="secure" value="300000" />
+  <setting name="sound_effects_enabled" type="system" value="1" />
+  <setting name="time_12_24" type="system" value="12" />
+  <setting name="dtmf_tone" type="system" value="1" />
+</resources>

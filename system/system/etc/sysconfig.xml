@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+    <!-- MTK：Ver7.0.10.13 -->
+    <!-- item: List the not supported items in your project: -->
+    <setting type="item" name="PhoneColor" value="0"/>
+    <setting type="item" name="Gyroscope" value="0"/>
+
+    <!-- test feature configs-->
+    <setting type="config" name="keys_MENU_HOME_BACK_BACKTOUCH_SUGAR" value="0,0,0,0,0"/> <!--Keys: if the key is support, set to "1",else "0"-->
+    <setting type="config" name="TP" value="0"/>                               <!--TouchPanel: "0", "1", "2" means 3 ways to test-->
+    <setting type="config" name="no_front_flash" value="1"/>                   <!--LED-->
+    <setting type="config" name="Mic_2" value="1"/>                            <!--MicRecorder-->
+    <setting type="config" name="FmFrequencyMode" value="0"/>                  <!--FTMFMRadio: could be "2" or "1",means freq*10 or not,default "0"-->
+    <setting type="config" name="DontShowChargerCurrent" value="1"/>           <!--Battery: "0"-->
+    <setting type="config" name="PsSimulatedByTP" value="0"/>                  <!--Alsps: if psensor is simiulated by tp, set to "1"-->
+    <!-- item below only in project v3760 should be set "1" -->
+    <setting type="config" name="DisableSubSpeaker" value="0"/>                <!--Speaker: dual-Speaker project should set "1",to disable sub speaker -->
+    <setting type="config" name="Fp_Test_supported" value="0"/>                <!--Fingerprint -->
+    <setting type="config" name="NFC_supported" value="0"/>
+
+    <setting type="config" name="HAC_supported" value="1"/>
+    <!--setting type="config" name="callTest_number" value="10000"/-->
+
+    <setting type="config" name="Show_MEID" value="1"/>
+    <setting type="item" name="HALL" value="0"/>
+    <setting type="item" name="MSensor" value="0"/>
+    <setting type="item" name="OTG" value="1"/>
+    <setting type="item" name="Camera2" value="1"/>
+    <setting type="item" name="Camera3" value="1"/>
+    <setting type="config" name="camfaccalibration" value="1"/>
+    <setting type="config" name="wideWineKey" value="1"/>
+    <setting type="config" name="trustonic_supported" value="1"/>
+<!--
+    <setting type="config" name="camfaccalibration" value="1"/>
+    <setting type="item" name="Keys" value="0"/>
+    <setting type="item" name="Version" value="0"/>
+    <setting type="item" name="MemoryCard" value="0"/>
+    <setting type="item" name="LED" value="0"/>
+    <setting type="item" name="HALL" value="0"/>
+    <setting type="item" name="MicRecorder" value="0"/>
+    <setting type="item" name="FTMFMRadio" value="0"/>
+    <setting type="item" name="OTG" value="0"/>
+    <setting type="item" name="Battery" value="0"/>
+    <setting type="item" name="Alsps" value="0"/>
+    <setting type="item" name="MSensor" value="0"/>
+    <setting type="item" name="GSensor" value="0"/>
+    <setting type="item" name="Gyroscope" value="0"/>
+    <setting type="item" name="Camera" value="0"/>
+    <setting type="item" name="CallTest" value="0"/>
+    <setting type="item" name="GPS" value="0"/>
+    <setting type="item" name="PhoneColor" value="0"/>
+
+  Don't modify items to "0" below, unless "DontRunItemsInBackground" set to "1":
+    <setting type="item" name="TouchPanel" value="1"/>
+    <setting type="item" name="LCDcolor" value="1"/>
+    <setting type="item" name="LCDcontrast" value="1"/>
+    <setting type="item" name="Speaker" value="1"/>
+    <setting type="item" name="Receiver" value="1"/>
+    <setting type="item" name="VibratorTest" value="1"/>
+    <setting type="item" name="SIMDetect" value="1"/>
+    <setting type="item" name="WiFiList" value="1"/>
+    <setting type="item" name="BluetoothList" value="1"/>
+-->
+
+   <!-- <setting type="config" name="DontRunItemsInBackground" value="0"/> -"0":do some items in background,combine some items,"1":items test one by one-->
+</resources>

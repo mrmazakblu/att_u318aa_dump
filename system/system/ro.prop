@@ -1,0 +1,3 @@
+ro.mediatek.rsc_name=default
+ro.sys.current_rsc_path=/system/etc/rsc/default
+ro.product.current_rsc_path=/product/etc/rsc/default
