@@ -1,0 +1,79 @@
+vendor.mediatek.hardware.bluetooth::IMtkBluetoothHci 			u:object_r:mtk_hal_bluetooth_hwservice:s0
+
+vendor.mediatek.hardware.mtkradioex::IMtkRadioEx u:object_r:mtk_hal_rild_hwservice:s0
+vendor.mediatek.hardware.radio::ISap u:object_r:mtk_hal_rild_hwservice:s0
+vendor.mediatek.hardware.interfaces_tc1.mtkradioex_tc1::IMtkRadioEx u:object_r:mtk_hal_rild_hwservice:s0
+vendor.mediatek.hardware.radio_op::IRadioOp u:object_r:mtk_hal_rild_hwservice:s0
+
+vendor.mediatek.hardware.mtkpower::IMtkPerf u:object_r:mtk_hal_power_hwservice:s0
+vendor.mediatek.hardware.mtkpower::IMtkPower u:object_r:mtk_hal_power_hwservice:s0
+vendor.mediatek.hardware.power::IPerf u:object_r:mtk_hal_power_hwservice:s0
+vendor.mediatek.hardware.power::IPower u:object_r:mtk_hal_power_hwservice:s0
+
+
+
+vendor.mediatek.hardware.lbs::ILbs u:object_r:mtk_hal_lbs_hwservice:s0
+
+vendor.mediatek.hardware.imsa::IImsa u:object_r:mtk_hal_imsa_hwservice:s0
+
+vendor.mediatek.hardware.nvram::INvram u:object_r:nvram_agent_binder_hwservice:s0
+
+vendor.mediatek.hardware.pq::IPictureQuality u:object_r:mtk_hal_pq_hwservice:s0
+
+vendor.mediatek.hardware.keymaster_attestation::IKeymasterDevice u:object_r:mtk_hal_keyattestation_hwservice:s0
+
+vendor.mediatek.hardware.fm::IFmRadio u:object_r:mtk_hal_fm_hwservice:s0
+
+vendor.mediatek.hardware.log::ILog u:object_r:mtk_hal_log_hwservice:s0
+
+vendor.mediatek.hardware.engineermode::IEmd u:object_r:mtk_hal_em_hwservice:s0
+
+vendor.mediatek.hardware.mms::IMms u:object_r:mtk_hal_mms_hwservice:s0
+
+vendor.mediatek.hardware.gpu::IGraphicExt u:object_r:mtk_hal_gpu_hwservice:s0
+
+vendor.mediatek.hardware.modemdbfilter::ICopyDBFilter u:object_r:mtk_hal_md_dbfilter_hwservice:s0
+
+vendor.mediatek.hardware.camera.lomoeffect::ILomoEffect u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.ccap::ICCAPControl u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.bgservice::IBGService u:object_r:mtk_hal_bgs_hwservice:s0
+vendor.mediatek.hardware.camera.isphal::IISPModule u:object_r:mtk_hal_bgs_hwservice:s0
+
+vendor.mediatek.hardware.camera.postproc::IPostDevice u:object_r:mtk_hal_bgs_hwservice:s0
+
+vendor.mediatek.hardware.hdmi::IMtkHdmiService u:object_r:mtk_hal_hdmi_hwservice:s0
+
+vendor.mediatek.hardware.camera.atms::IATMs u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.advcam::IAdvCamControl u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.wfo::IWifiOffload u:object_r:mtk_hal_wfo_hwservice:s0
+vendor.mediatek.hardware.camera.lomoeffect::ILomoEffect u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.keyinstall::IKeyinstall u:object_r:mtk_hal_keyinstall_hwservice:s0
+vendor.mediatek.hardware.videotelephony::IVideoTelephony u:object_r:mtk_hal_videotelephony_hwservice:s0
+vendor.mediatek.hardware.presence::IPresence u:object_r:volte_uce_ua_hwservice:s0
+vendor.mediatek.hardware.mtkcodecservice::IMtkCodecService u:object_r:hal_mtkcodecservice_hwservice:s0
+vendor.mediatek.hardware.netdagent::INetdagent u:object_r:mtk_hal_netdagent_hwservice:s0
+vendor.mediatek.hardware.rcs::IRcs u:object_r:volte_rcs_ua_hwservice:s0
+vendor.mediatek.hardware.camera.callbackclient::IMtkCallbackClient u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.ccap::ICCAPControl u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.dfps::IFpsPolicyService u:object_r:mtk_hal_dfps_hwservice:s0
+vendor.mediatek.hardware.dplanner::IDPlanner u:object_r:mtk_hal_dplanner_hwservice:s0
+vendor.mediatek.hardware.keymanage::IKeymanage u:object_r:mtk_hal_keymanage_hwservice:s0
+vendor.mediatek.hardware.pplagent::IPplAgent u:object_r:mtk_hal_pplagent_hwservice:s0
+vendor.mediatek.hardware.atci::IAtcid u:object_r:hal_atci_hwservice:s0
+vendor.mediatek.hardware.dmc::IDmcService u:object_r:mtk_hal_dmc_hwservice:s0
+vendor.mediatek.hardware.apmonitor::IApmService u:object_r:mtk_hal_apm_hwservice:s0
+vendor.microtrust.hardware.thh::IThhDevice u:object_r:hal_thh_hwservice:s0
+vendor.microtrust.hardware.tui::ITuiDevice u:object_r:hal_tui_hwservice:s0
+vendor.microtrust.hardware.capi::IClientApiDevice u:object_r:hal_capi_hwservice:s0
+vendor.mediatek.hardware.wifi.supplicant::ISupplicant u:object_r:hal_wifi_supplicant_hwservice:s0
+vendor.mediatek.hardware.camera.security::ISecureCamera u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.frhandler::IFRHandler u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.mdmonitor::IMDMonitorService u:object_r:mtk_mdm_hidl_server:s0
+vendor.mediatek.hardware.omadm::IOmadm u:object_r:mtk_hal_omadm_hwservice:s0
+vendor.mediatek.hardware.nwk_opt::INwkOpt u:object_r:mtk_hal_nwk_opt_hwservice:s0
+vendor.mediatek.hardware.clientapi::IClientapi u:object_r:volte_clientapi_ua_hwservice:s0
+vendor.trustonic.tee::ITee                        u:object_r:hal_tee_hwservice:s0
+vendor.trustonic.tee.tui::ITui                    u:object_r:hal_tee_hwservice:s0
+vendor.trustonic.teeregistry::ITeeRegistry        u:object_r:hal_teeregistry_hwservice:s0
+vendor.tinno.camera.vendorimageeffect::IVendorImageeffect u:object_r:hal_camera_hwservice:s0
+vendor.iqi.hardware.iqagent::IChannel u:object_r:hal_iqagent_hwservice:s0

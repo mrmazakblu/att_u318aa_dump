@@ -1,0 +1,30 @@
+#INTERNAL_START
+on post-fs
+
+    chmod 0660 /dev/spm
+    chown system system /dev/spm
+
+on boot
+
+service spm_script /vendor/bin/spm_loader
+    user system
+    group system
+    oneshot
+#INTERNAL_END
+
+#TINNO:add for set master flag
+service master_flag /vendor/bin/master_flag
+    class late_start
+    user system
+    group system
+    oneshot
+#TINNO:add for set kph key flag
+service kph_flag /vendor/bin/kph_flag
+    class late_start
+    user system
+    group system
+    oneshot
+    disabled
+
+
+

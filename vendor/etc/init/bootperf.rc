@@ -1,0 +1,7 @@
+# Set enableflags for boot Systrace
+on early-init && property:ro.boot.boot_trace=1
+    setprop debug.atrace.tags.enableflags 0x1fffffe
+
+    #Trace SystemUI App for booting
+    setprop debug.atrace.app_number 1
+    setprop debug.atrace.app_0 "com.android.systemui"

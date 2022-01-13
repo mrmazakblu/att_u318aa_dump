@@ -1,0 +1,47 @@
+<manifest version="1.0" type="device">
+   <hal override="true" format="hidl">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>slot1</instance>
+            <instance>imsAospSlot1</instance>
+            <instance>se1</instance>
+            <instance>em1</instance>
+        </interface>
+        <interface>
+            <name>ISap</name>
+            <instance>slot1</instance>
+        </interface>
+        <fqname>@1.4::IRadio/slot1</fqname>
+        <fqname>@1.4::IRadio/imsAospSlot1</fqname>
+        <fqname>@1.4::IRadio/se1</fqname>
+        <fqname>@1.4::IRadio/em1</fqname>
+    </hal>
+    <hal override="true" format="hidl">
+        <name>vendor.mediatek.hardware.mtkradioex</name>
+        <transport>hwbinder</transport>
+        <version>1.6</version>
+        <interface>
+            <name>IMtkRadioEx</name>
+            <instance>mtkSlot1</instance>
+            <instance>imsSlot1</instance>
+            <instance>mtkSe1</instance>
+            <instance>mtkEm1</instance>
+            <instance>mtkAssist1</instance>
+            <instance>mtkRcs1</instance>
+            <instance>mtkCap1</instance>
+        </interface>
+    </hal>
+    <hal override="true" format="hidl">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISecureElement</name>
+            <instance>SIM1</instance>
+            <instance>eSE1</instance>
+        </interface>
+    </hal>
+</manifest>
