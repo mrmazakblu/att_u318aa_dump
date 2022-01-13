@@ -1,0 +1,14 @@
+kernel=kernel
+ramdisk=ramdisk
+dt=dt.img
+page_size=2048
+kernel_size=7993198
+ramdisk_size=754618
+dtb_size=2
+base_addr=0x40000000
+kernel_offset=0x00008000
+ramdisk_offset=0x05000000
+tags_offset=0x04000000
+cmd_line='bootopt=64S3,32S1,32S1 buildvariant=user'
+board=""
+format=gzip

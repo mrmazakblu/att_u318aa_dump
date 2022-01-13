@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <split-permission name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"
+                      targetSdk="29">
+        <new-permission name="android.permission.ACTIVITY_RECOGNITION" />
+    </split-permission>
+</permissions>

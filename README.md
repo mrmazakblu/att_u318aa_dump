@@ -1,0 +1,14 @@
+# full_u318-user 10 QP1A.190711.020 1629963840 release-keys
+- manufacturer: tinno
+- platform: mt6739
+- codename: U318AA
+- flavor: full_u318-user
+- release: 10
+- id: QP1A.190711.020
+- incremental: 1629963840
+- tags: release-keys
+- fingerprint: ATT/U318AA/U318AA:10/QP1A.190711.020/1629963840:user/release-keys
+- is_ab: false
+- brand: ATT
+- branch: full_u318-user-10-QP1A.190711.020-1629963840-release-keys
+- repo: att_u318aa_dump
