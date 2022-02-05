@@ -1,0 +1,879 @@
+#line 1 "device/mediatek/sepolicy/basic/non_plat/property_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+#=============allow ccci_mdinit to start gsm0710muxd==============
+ctl.vendor.gsm0710muxd u:object_r:ctl_gsm0710muxd_prop:s0
+
+
+#=============allow mtkrild to set persist.ril property==============
+vendor.ril.ipo u:object_r:vendor_ril_ipo_prop:s0
+
+#=============allow netlog==============
+vendor.mtklog  u:object_r:debug_mtklog_prop:s0
+persist.vendor.mtklog u:object_r:persist_mtklog_prop:s0
+vendor.netlog u:object_r:debug_netlog_prop:s0
+
+#=============allow mdlogger==============
+vendor.mdlogger u:object_r:debug_mdlogger_prop:s0
+vendor.mdl u:object_r:vendor_mdl_prop:s0
+vendor.starting.mode  u:object_r:vendor_mdl_start_prop:s0
+vendor.usb. u:object_r:vendor_usb_prop:s0
+persist.vendor.usb. u:object_r:vendor_usb_prop:s0
+persist.vendor.mdl u:object_r:persist_mdlog_prop:s0
+vendor.pullmdlog u:object_r:vendor_mdl_pulllog_prop:s0
+
+
+#=============allow AEE==============
+# persist.vendor.mtk.aee.mode && persist.vendor.mtk.aee.dal
+persist.vendor.mtk.aee. u:object_r:persist_mtk_aee_prop:s0
+persist.vendor.mtk.aeev. u:object_r:persist_mtk_aeev_prop:s0
+
+# persist.vendor.aee.core.dump && persist.vendor.aee.core.direct
+persist.vendor.aee. u:object_r:persist_aee_prop:s0
+persist.vendor.aeev. u:object_r:persist_aeev_prop:s0
+
+# vendor.debug.mtk.aee.db
+vendor.debug.mtk.aee. u:object_r:debug_mtk_aee_prop:s0
+vendor.debug.mtk.aeev u:object_r:debug_mtk_aeev_prop:s0
+
+ro.vendor.aee.build.info u:object_r:ro_mtk_aee_prop:s0
+ro.vendor.aee.enforcing u:object_r:ro_mtk_aee_prop:s0
+ro.vendor.have_aee_feature u:object_r:ro_mtk_aee_prop:s0
+
+#=============allow AEE_Dumpstate==============
+vendor.debug.bq.dump u:object_r:debug_bq_dump_prop:s0
+
+#=============allow mux==============
+vendor.ril.mux.      u:object_r:gsm0710muxd_prop:s0
+
+#=============allow mdinit==============
+ctl.vendor.ril-daemon-mtk   u:object_r:ctl_ril-daemon-mtk_prop:s0
+ctl.vendor.fusion_ril_mtk   u:object_r:ctl_fusion_ril_mtk_prop:s0
+ctl.vendor.ril-proxy   u:object_r:ctl_ril-proxy_prop:s0
+ctl.vendor.viarild u:object_r:ctl_viarild_prop:s0
+
+ctl.vendor.muxreport-daemon u:object_r:ctl_muxreport-daemon_prop:s0
+ctl.vendor.ccci_fsd u:object_r:ctl_ccci_fsd_prop:s0
+ctl.vendor.ccci2_fsd u:object_r:ctl_ccci2_fsd_prop:s0
+ctl.vendor.ccci3_fsd u:object_r:ctl_ccci3_fsd_prop:s0
+
+vendor.ril.active.md        u:object_r:ril_active_md_prop:s0
+vendor.ril.mux.report.case  u:object_r:ril_mux_report_case_prop:s0
+vendor.ril.cdma.report      u:object_r:ril_cdma_report_prop:s0
+
+#=============allow dynamic telephony switch==============
+ro.boot.opt_c2k_lte_mode    u:object_r:tel_switch_prop:s0
+ro.boot.opt_c2k_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_eccci_c2k       u:object_r:tel_switch_prop:s0
+ro.boot.opt_lte_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_md1_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_md2_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_md3_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_md5_support     u:object_r:tel_switch_prop:s0
+ro.boot.opt_ps1_rat         u:object_r:tel_switch_prop:s0
+ro.boot.opt_sim_count       u:object_r:tel_switch_prop:s0
+ro.boot.opt_using_default   u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_c2k_lte_mode    u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_c2k_support     u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_eccci_c2k       u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_lte_support     u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_md1_support     u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_md3_support     u:object_r:tel_switch_prop:s0
+ro.vendor.mtk_ps1_rat         u:object_r:tel_switch_prop:s0
+
+#=============allow bootanim==============
+persist.vendor.bootanim.     u:object_r:bootani_prop:s0
+
+#=============allow mnld_prop ==============
+vendor.gps.clock.type u:object_r:mnld_prop:s0
+vendor.gps.gps.version u:object_r:mnld_prop:s0
+vendor.gpsdbglog.enable u:object_r:mnld_prop:s0
+vendor.gpsdbglog. u:object_r:mnld_prop:s0
+vendor.debug.gps. u:object_r:mnld_prop:s0
+
+#=============allow audiohal==============
+vendor.streamout.         u:object_r:audiohal_prop:s0
+vendor.streamin.          u:object_r:audiohal_prop:s0
+vendor.a2dp.              u:object_r:audiohal_prop:s0
+vendor.audiohal.          u:object_r:audiohal_prop:s0
+persist.vendor.audiohal.  u:object_r:audiohal_prop:s0
+persist.vendor.vow.       u:object_r:audiohal_prop:s0
+
+#=============allow wmt ==============
+persist.vendor.connsys.coredump.mode u:object_r:coredump_prop:s0
+persist.vendor.connsys. u:object_r:wmt_prop:s0
+vendor.connsys. u:object_r:wmt_prop:s0
+
+
+#=============allow c2k_prop ==============
+vendor.net.cdma.mdmstat u:object_r:net_cdma_mdmstat:s0
+
+
+#=============allow ccci_mdinit md status ==============
+vendor.mtk.md   u:object_r:mtk_md_prop:s0
+#============= allow factory idle current prop ==============
+vendor.debug.factory.idle_state    u:object_r:vendor_factory_idle_state_prop:s0
+
+#=============allow mobile log property================
+vendor.MB.            u:object_r:mobile_log_prop:s0
+
+#=============allow service.nvram_init property================
+vendor.service.nvram_init     u:object_r:service_nvram_init_prop:s0
+
+
+#=============Allow EM To Set Camera APP Mode  ==============
+vendor.client.      u:object_r:mtk_em_prop:s0
+
+#=============allow mediatek_prop ==============
+vendor.debug.camera.p2plug.log u:object_r:mediatek_prop:s0
+vendor.client.em.appmode u:object_r:mediatek_prop:s0
+#=============Property set by EM, for test/debug purpose=========
+persist.vendor.em.  u:object_r:mtk_em_sys_prop:s0
+persist.vendor.em.hidl.  u:object_r:mtk_em_hidl_prop:s0
+
+#=============allow em set tethering protocol================
+persist.vendor.net.auto.tethering   u:object_r:mtk_em_net_auto_tethering_prop:s0
+
+#=============allow em set ims operator property===========
+vendor.ril.volte.mal.pctid u:object_r:mtk_operator_id_prop:s0
+
+#=============allow em set simswitch property===========
+persist.vendor.radio.simswitch.emmode u:object_r:mtk_simswitch_emmode_prop:s0
+
+#=============allow em set mtk_dsbp_support property===========
+persist.vendor.radio.mtk_dsbp_support u:object_r:mtk_dsbp_support_prop:s0
+
+#=============allow em set imstestmode property===========
+persist.vendor.radio.imstestmode u:object_r:mtk_imstestmode_prop:s0
+
+#=============allow em set smsformat property===========
+persist.vendor.radio.smsformat u:object_r:mtk_smsformat_prop:s0
+
+#=============allow em set gprs.prefer property===========
+persist.vendor.radio.gprs.prefer u:object_r:mtk_gprs_prefer_prop:s0
+
+#=============allow em set testsim.cardtype property===========
+persist.vendor.radio.testsim.cardtype u:object_r:mtk_testsim_cardtype_prop:s0
+
+#=============allow em set ct.ir.engmode property===========
+persist.vendor.radio.ct.ir.engmode u:object_r:mtk_ct_ir_engmode_prop:s0
+
+#=============allow em set disable_c2k_cap property===========
+persist.vendor.radio.disable_c2k_cap u:object_r:mtk_disable_c2k_cap_prop:s0
+
+#=============allow em to set modem reset delay property================
+vendor.mediatek.debug.md.reset.wait u:object_r:mtk_debug_md_reset_prop:s0
+
+#=============allow em to set video log omx.* property================
+vendor.mtk.omx. u:object_r:mtk_omx_log_prop:s0
+
+#=============allow em to set vdec log property================
+vendor.mtk.vdec.log u:object_r:mtk_vdec_log_prop:s0
+
+#=============allow em to set vdectlc logproperty================
+vendor.mtk.vdectlc.log u:object_r:mtk_vdectlc_log_prop:s0
+
+#=============allow em to set venc h264 showlog property================
+vendor.mtk.venc.h264.showlog u:object_r:mtk_venc_h264_showlog_prop:s0
+
+#=============allow em to set modem warning property================
+persist.vendor.radio.modem.warning u:object_r:mtk_modem_warning_prop:s0
+
+#=============allow em to set bgdata disabled property================
+persist.vendor.radio.bgdata.disabled u:object_r:mtk_bgdata_disabled:s0
+
+#=============allow em to set telecom vibrate property================
+persist.vendor.radio.telecom.vibrate u:object_r:mtk_telecom_vibrate:s0
+
+#=============allow em to set gprs attach type property================
+persist.vendor.radio.gprs.attach.type u:object_r:mtk_gprs_attach_type:s0
+
+#=============allow em to set poweroffmd property================
+vendor.ril.test.poweroffmd u:object_r:mtk_power_off_md_type:s0
+vendor.ril.testmode u:object_r:mtk_power_off_md_type:s0
+
+
+#=============allow system server to set meta_connecttype property  ==============
+persist.vendor.meta.connecttype u:object_r:meta_connecttype_prop:s0
+
+#=============Telephony Sensitive property==============
+vendor.ril.iccid.sim u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.uim.subscriberid u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.last_iccid_sim  u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.ia.iccid u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.radio.ia u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.c2kirat.ia.sim1 u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.c2kirat.ia.sim2 u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.c2kirat.ia.sim3 u:object_r:mtk_telephony_sensitive_prop:s0
+vendor.ril.c2kirat.ia.sim4 u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ia   u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ia.1 u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ia.2 u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.ia.3 u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.data.iccid u:object_r:mtk_telephony_sensitive_prop:s0
+persist.vendor.radio.mobile.data u:object_r:mtk_telephony_sensitive_prop:s0
+
+#=============allow sim config property==============
+vendor.gsm.sim.operator.default-name u:object_r:vendor_sim_system_prop:s0
+
+#=============allow processes to change thermal config================
+vendor.thermal.manager.data u:object_r:mtk_thermal_config_prop:s0
+#=============allow composer set property ============================
+vendor.debug.sf.hwc_pid u:object_r:graphics_hwc_pid_prop:s0
+vendor.debug.sf.latch_unsignaled u:object_r:graphics_hwc_latch_unsignaled_prop:s0
+vendor.debug.sf.hdr_enable u:object_r:graphics_hwc_hdr_prop:s0
+
+#============= atm modem mode property(ATM) ==============
+persist.vendor.atm.mdmode u:object_r:atm_mdmode_prop:s0
+
+#============= atm ip address property(ATM) ==============
+persist.vendor.atm.ipaddress u:object_r:atm_ipaddr_prop:s0
+
+#============= atm boot property(ATM) ==============
+ro.boot.atm u:object_r:mtk_default_prop:s0
+
+#=============allow consyslogger==============
+vendor.connsysfw u:object_r:vendor_connsysfw_prop:s0
+
+#============Label telephony property=======#
+vendor.ril. u:object_r:vendor_radio_prop:s0
+ro.vendor.ril. u:object_r:vendor_radio_prop:s0
+vendor.gsm. u:object_r:vendor_radio_prop:s0
+persist.vendor.radio. u:object_r:vendor_radio_prop:s0
+
+#=============allow bluetooth==============
+vendor.bthcisnoop u:object_r:vendor_bluetooth_prop:s0
+
+#=============em camera property==============
+vendor.debug. u:object_r:vendor_debug_prop:s0
+
+#=============allow ct volte==============
+persist.vendor.mtk_ct_volte_support u:object_r:mtk_ct_volte_prop:s0
+
+#============Label mtk ril mode=======#
+ro.vendor.mtk_ril_mode u:object_r:mtk_ril_mode_prop:s0
+
+#=============GPS support properties==============
+ro.vendor.mtk_gps_support u:object_r:mtk_gps_support_prop:s0
+ro.vendor.mtk_agps_app u:object_r:mtk_gps_support_prop:s0
+ro.vendor.mtk_log_hide_gps u:object_r:mtk_gps_support_prop:s0
+ro.vendor.mtk_hidl_consolidation u:object_r:mtk_gps_support_prop:s0
+
+#============allow rat config=======#
+ro.vendor.mtk_protocol1_rat_config u:object_r:mtk_rat_config_prop:s0
+
+#=============allow mtk aal==============#
+ro.vendor.mtk_aal_support u:object_r:mtk_aal_ro_prop:s0
+ro.vendor.mtk_ultra_dimming_support u:object_r:mtk_aal_ro_prop:s0
+ro.vendor.mtk_dre30_support u:object_r:mtk_aal_ro_prop:s0
+
+#=============allow mtk pq==============#
+persist.vendor.sys.pq. u:object_r:mtk_pq_prop:s0
+vendor.debug.pq. u:object_r:mtk_pq_prop:s0
+persist.vendor.sys.isp. u:object_r:mtk_pq_prop:s0
+persist.vendor.sys.mtkaal. u:object_r:mtk_pq_prop:s0
+ro.vendor.mtk_pq_color_mode u:object_r:mtk_pq_ro_prop:s0
+ro.vendor.mtk_blulight_def_support u:object_r:mtk_pq_ro_prop:s0
+ro.vendor.mtk_chameleon_support u:object_r:mtk_pq_ro_prop:s0
+ro.vendor.mtk_pq_support u:object_r:mtk_pq_ro_prop:s0
+
+# Mtk properties that allow all system/vendor processes to read.
+# Usually they are config properties (but not limited to)
+ro.vendor.mtk_tdd_data_only_support u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_audio_alac_support u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_support_mp2_playback u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_audio_ape_support u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_flv_playback_support u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_mtkps_playback_support u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_wearable_platform u:object_r:mtk_default_prop:s0
+ro.vendor.mediatek.platform u:object_r:mtk_default_prop:s0
+ro.vendor.mediatek.version.branch u:object_r:mtk_default_prop:s0
+ro.vendor.mediatek.version.release u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_exchange_support u:object_r:mtk_default_prop:s0
+vendor.met.running u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_disable_cap_switch u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_sim_card_onoff u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_perf_plus u:object_r:mtk_default_prop:s0
+
+#============mtk emmc=======#
+ro.vendor.mtk_emmc_support u:object_r:mtk_emmc_support_prop:s0
+
+# MTK connsys log feature
+ro.vendor.connsys.dedicated.log u:object_r:mtk_default_prop:s0
+
+#=============em usb property==============
+vendor.usb.port.mode u:object_r:vendor_em_usb_prop:s0
+vendor.em.usb. u:object_r:vendor_em_usb_prop:s0
+
+#=============allow em to set usb otg switch property  ==============
+persist.vendor.usb.otg.switch u:object_r:vendor_usb_otg_switch:s0
+
+#============mtk rsc========#
+ro.boot.rsc u:object_r:mtk_default_prop:s0
+
+#=============mtk anr property=============
+persist.vendor.dbg.anrflow u:object_r:mtk_anr_support_prop:s0
+persist.vendor.anr. u:object_r:mtk_anr_support_prop:s0
+vendor.anr.autotest u:object_r:mtk_anr_support_prop:s0
+
+#=============mtk app resolution tuner=============
+ro.vendor.app_resolution_tuner u:object_r:mtk_appresolutiontuner_prop:s0
+persist.vendor.dbg.disable.art u:object_r:mtk_appresolutiontuner_prop:s0
+
+#=============mtk fullscreen switch=============
+ro.vendor.fullscreen_switch u:object_r:mtk_fullscreenswitch_prop:s0
+
+#============= allow em set ims xcap property ===============
+persist.vendor.ss. u:object_r:mtk_ss_vendor_prop:s0
+
+# MTK Antutu feature
+ro.vendor.net.upload.benchmark.default u:object_r:mtk_antutu_prop:s0
+
+#=============malloc debug unwind backtrace switch property==============#
+vendor.debug.malloc.bt.switch u:object_r:mtk_malloc_debug_backtrace_prop:s0
+
+#=============allow gmo====================#
+ro.vendor.gmo.ram_optimize u:object_r:mtk_default_prop:s0
+ro.vendor.gmo.rom_optimize u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_config_max_dram_size u:object_r:mtk_default_prop:s0
+
+#=============MTK Voice Recognize property===========#
+vendor.voicerecognize.raw u:object_r:mtk_voicerecgnize_prop:s0
+vendor.voicerecognize_data.raw u:object_r:mtk_voicerecgnize_prop:s0
+vendor.voicerecognize.noDL u:object_r:mtk_voicerecgnize_prop:s0
+
+#=============allow radio to set/get xcap rawurl config================
+persist.vendor.mtk.xcap.rawurl  u:object_r:persist_xcap_rawurl_prop:s0
+
+#=============mtk bt enable SAP profile property=============#
+ro.vendor.mtk.bt_sap_enable u:object_r:mtk_bt_sap_enable_prop:s0
+
+#=============allow processes to change powerhal config================
+persist.vendor.powerhal. u:object_r:mtk_powerhal_prop:s0
+vendor.powerhal. u:object_r:mtk_powerhal_prop:s0
+
+#=============MTK Wifi wlan_assistant property=============
+vendor.mtk.nvram.ready u:object_r:mtk_nvram_ready_prop:s0
+
+#=============Wi-Fi Hotspot==============
+ro.vendor.wifi.sap.interface u:object_r:mtk_wifi_hotspot_prop:s0
+
+#=============allow mtk hdmi==============#
+persist.vendor.sys.hdmi_hidl. u:object_r:mtk_hdmi_prop:s0
+
+#=============mtk nn option==============#
+ro.vendor.mtk_nn.option u:object_r:mtk_nn_option_prop:s0
+
+ro.odm.tinno.scc u:object_r:mtk_default_prop:s0
+ro.odm.tinno.scc.tlc u:object_r:mtk_default_prop:s0
+#============system wfc service property===========
+persist.vendor.wfc. u:object_r:mtk_wfc_serv_prop:s0
+
+#=============build version need be read by system or vendor process
+ro.vendor.custom.build.version u:object_r:mtk_default_prop:s0
+ro.vendor.internal.build.version u:object_r:mtk_default_prop:s0
+ro.vendor.tinternal.build.version u:object_r:mtk_default_prop:s0
+ro.vendor.tcustom.build.version u:object_r:mtk_default_prop:s0
+#line 1 "device/mediatek/sepolicy/bsp/non_plat/property_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+#=============allow mdinit==============
+ctl.vendor.ccci_rpcd         u:object_r:ctl_ccci_rpcd_prop:s0
+ctl.vendor.ccci2_rpcd         u:object_r:ctl_ccci2_rpcd_prop:s0
+
+
+
+
+#=============allow teei daemon and init_thh daemon to set property  ==============
+vendor.soter.teei.   u:object_r:soter_teei_prop:s0
+
+#============= allow both system/vendor get mtklog_internal ==========================
+ro.vendor.mtklog_internal u:object_r:mtk_default_prop:s0
+
+#=============allow android log much detect==============
+vendor.logmuch.value  u:object_r:vendor_logmuch_prop:s0
+vendor.logmuch.delay  u:object_r:vendor_logmuch_prop:s0
+persist.vendor.logmuch u:object_r:logmuch_prop:s0
+
+#=============allow radio to set mtk_volte_enable property  ==============
+persist.vendor.mtk.volte.enable u:object_r:mtk_volte_prop:s0
+
+#=============allow radio to set volte_support property  ==============
+persist.vendor.volte_support u:object_r:mtk_volte_support_prop:s0
+
+#=============allow radio to set mtk_wfc_support property  ==============
+persist.vendor.mtk_wfc_support u:object_r:mtk_wfc_support_prop:s0
+
+#=============allow radio to set vilte_support property  ==============
+persist.vendor.vilte_support u:object_r:mtk_vilte_support_prop:s0
+
+#=============allow radio to set viwifi_support property  ==============
+persist.vendor.viwifi_support u:object_r:mtk_viwifi_support_prop:s0
+
+#=============allow radio to set mtk_rcs_ua_support property  ==============
+persist.vendor.mtk_rcs_ua_support u:object_r:mtk_rcs_ua_support_prop:s0
+
+#=============allow radio to set mtk_wfc_enable property  ==============
+persist.vendor.mtk.wfc.enable u:object_r:mtk_wfc_prop:s0
+
+#=============allow radio to set mtk_vilte_enable property  ==============
+persist.vendor.mtk.vilte.enable u:object_r:mtk_vilte_prop:s0
+
+#=============allow radio to set mtk_viwifi_enable property  ==============
+persist.vendor.mtk.viwifi.enable u:object_r:mtk_viwifi_prop:s0
+
+#=============allow radio to set mtk_vt_enable property  ==============
+persist.vendor.mtk.ims.video.enable u:object_r:mtk_vt_prop:s0
+
+#=============allow radio to set mtk_vonr_enable property  ==============
+persist.vendor.mtk.vonr.enable u:object_r:mtk_vonr_prop:s0
+
+#=============allow radio to set mtk_vinr_enable property  ==============
+persist.vendor.mtk.vinr.enable u:object_r:mtk_vinr_prop:s0
+
+#=============allow adb to set wfc mccmnc property  ==============
+persist.vendor.mtk.wfc.mccmnc_list u:object_r:mtk_wfc_mccmnc_prop:s0
+
+#=============allow adb to set entitlement property  ==============
+persist.vendor.entitlement_enabled u:object_r:mtk_wfc_entitlement_prop:s0
+persist.vendor.entitlement.sesurl u:object_r:mtk_wfc_entitlement_prop:s0
+persist.vendor.net.wo.epdg_fqdn u:object_r:mtk_wfc_entitlement_prop:s0
+
+#=============allow system_app to get opt-in property  ==============
+persist.vendor.mtk_wfc_opt_in u:object_r:mtk_wfc_opt_in_prop:s0
+persist.vendor.opt-in.url u:object_r:mtk_opt_in_url_prop:s0
+persist.vendor.apptoken.required u:object_r:mtk_apptoken_required_prop:s0
+
+#=============allow radio to set common data releated property  ==============
+vendor.ril.md_changed_apn_class u:object_r:mtk_common_data_prop:s0
+vendor.ril.md_changed_apn_class.iccid u:object_r:mtk_common_data_prop:s0
+persist.vendor.radio.default.data.selected u:object_r:mtk_common_data_prop:s0
+
+#=============allow atcid==============
+persist.vendor.service.atci   u:object_r:persist_service_atci_prop:s0
+vendor.mtk.atci   u:object_r:mtk_atci_prop:s0
+
+#=============allow carrier express (cxp)==============
+# mtk_cxp_vendor_prop: vendor set/get, system get
+# usp_srv_prop: system set/get
+#============================================
+persist.vendor.operator.optr    u:object_r:mtk_cxp_vendor_prop:s0
+persist.vendor.operator.spec    u:object_r:mtk_cxp_vendor_prop:s0
+persist.vendor.operator.seg    u:object_r:mtk_cxp_vendor_prop:s0
+persist.vendor.operator.subid    u:object_r:mtk_cxp_vendor_prop:s0
+persist.vendor.mtk_usp_md_sbp_code    u:object_r:mtk_cxp_vendor_prop:s0
+ro.vendor.mtk_carrierexpress_pack    u:object_r:mtk_cxp_vendor_prop:s0
+persist.vendor.mtk_usp_switch_mode    u:object_r:mtk_cxp_vendor_prop:s0
+
+persist.vendor.operator.optr_1    u:object_r:usp_srv_prop:s0
+persist.vendor.operator.spec_1    u:object_r:usp_srv_prop:s0
+persist.vendor.operator.seg_1    u:object_r:usp_srv_prop:s0
+persist.vendor.mtk_usp    u:object_r:usp_srv_prop:s0
+
+
+#=============allow em set vt operator property===========
+persist.vendor.vt. u:object_r:vendor_vt_prop:s0
+
+#=============allow system update to set prop=============
+persist.vendor.update_finished u:object_r:mtk_update_prop:s0
+persist.vendor.previous_slot u:object_r:mtk_update_prop:s0
+
+#=============allow system_server to set vendor.media.wfd.*==============
+vendor.media.wfd. u:object_r:media_wfd_prop:s0
+
+
+#=======================allow vsim===========================
+vendor.gsm.disable.sim.dialog     u:object_r:mtk_vsim_sys_prop:s0
+vendor.gsm.external.sim.enabled   u:object_r:mtk_vsim_prop:s0
+vendor.gsm.external.sim.inserted  u:object_r:mtk_vsim_prop:s0
+vendor.gsm.external.sim.internal  u:object_r:mtk_vsim_prop:s0
+vendor.gsm.modem.vsim.capability  u:object_r:mtk_vsim_prop:s0
+vendor.gsm.prefered.aka.sim.slot  u:object_r:mtk_vsim_prop:s0
+vendor.gsm.prefered.rsim.slot     u:object_r:mtk_vsim_prop:s0
+vendor.gsm.external.sim.timeout   u:object_r:mtk_vsim_prop:s0
+vendor.gsm.external.sim.connected u:object_r:mtk_vsim_prop:s0
+persist.vendor.radio.external.sim u:object_r:mtk_vsim_prop:s0
+persist.vendor.radio.vsim.timeout u:object_r:mtk_vsim_prop:s0
+
+vendor.trustkernel.   u:object_r:tkcore_prop:s0
+
+#============= allow em set ims xcap property ===============
+persist.vendor.gba u:object_r:vendor_ims_xcap_prop:s0
+persist.vendor.radio.ss.mode u:object_r:vendor_ims_xcap_prop:s0
+persist.vendor.radio.ss.xrdm u:object_r:vendor_ims_xcap_prop:s0
+persist.vendor.radio.xcap.cfn u:object_r:vendor_ims_xcap_prop:s0
+
+#============= allow supplementary service property ===============
+vendor.gsm.radio.ss.sc                  u:object_r:vendor_supp_serv_prop:s0
+vendor.gsm.radio.ss.imsdereg            u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.iccid.         u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.change.        u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu_over_ims       u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.sync_for_ota   u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.mode           u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.timeslot.      u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.radio.cfu.querytype      u:object_r:vendor_supp_serv_prop:s0
+persist.vendor.suppserv.                u:object_r:vendor_supp_serv_prop:s0
+vendor.suppserv.                        u:object_r:vendor_supp_serv_prop:s0
+
+#============= allow bluetooth to set prop ==============
+vendor.bluetooth.    u:object_r:mtk_bluetooth_prop:s0
+persist.vendor.bluetooth.    u:object_r:mtk_bluetooth_prop:s0
+
+#============= allow MD to set prop ==============
+ro.vendor.md_prop_ver u:object_r:mtk_md_version_prop:s0
+
+#=============allow EM set moms property===========
+persist.vendor.sys.disable.moms u:object_r:mtk_moms_prop:s0
+
+#=============allow EM set tel log property===========
+persist.vendor.log.tel_dbg u:object_r:mtk_em_tel_log_prop:s0
+persist.vendor.log.tel_log_ctrl u:object_r:mtk_log_tel_dbg_prop:s0
+
+#=============allow IMS property===========
+ro.vendor.md_auto_setup_ims u:object_r:mtk_ims_prop:s0
+ro.vendor.md_mims_support u:object_r:mtk_ims_prop:s0
+persist.vendor.ims_support u:object_r:mtk_ims_prop:s0
+ro.vendor.mtk_imsi_switch_support u:object_r:mtk_ims_prop:s0
+
+#=============allow ims config property===========
+vendor.ril.imsconfig.force.notify u:object_r:vendor_imsconfig_prop:s0
+
+#============= allow ipsec_mon to set prop ==============
+vendor.net.    u:object_r:mtk_network_prop:s0
+
+#=============allow CTA property===========
+vendor.cta.log.enable u:object_r:mtk_cta_log_prop:s0
+ro.vendor.mtk_mobile_management u:object_r:mtk_mobile_management_prop:s0
+
+#=============allow vendor_init to set ro.vendor.mtk_wfd_support==============
+ro.vendor.mtk_wfd_support u:object_r:ro_vendor_mtk_wfd_support_prop:s0
+
+#=============allow AudioServer property===========
+vendor.af.mixer.pcm           u:object_r:audio_prop:s0
+vendor.af.mixer.drc.pcm       u:object_r:audio_prop:s0
+vendor.af.timestretch.in.pcm  u:object_r:audio_prop:s0
+vendor.af.offload.write.raw   u:object_r:audio_prop:s0
+vendor.af.resampler.pcm       u:object_r:audio_prop:s0
+vendor.af.mixer.dwnmx.pcm     u:object_r:audio_prop:s0
+vendor.af.record.dump.pcm     u:object_r:audio_prop:s0
+vendor.af.mixer.limin.pcm     u:object_r:audio_prop:s0
+vendor.af.track.pcm           u:object_r:audio_prop:s0
+vendor.af.effect.pcm          u:object_r:audio_prop:s0
+vendor.af.audioflinger.log    u:object_r:audio_prop:s0
+vendor.af.track.log           u:object_r:audio_prop:s0
+vendor.af.policy.debug        u:object_r:audio_prop:s0
+vendor.af.dump.log            u:object_r:audio_prop:s0
+vendor.audioserver.           u:object_r:audio_prop:s0
+vendor.af.mixer.end.pcm           u:object_r:audio_prop:s0
+
+#=============allow mtk duraspeed property==============
+persist.vendor.duraspeed. u:object_r:mtk_duraspeed_prop:s0
+persist.vendor.low.memory.hint u:object_r:mtk_duraspeed_prop:s0
+persist.vendor.sys.vm.drop_caches u:object_r:mtk_duraspeed_drop_caches:s0
+
+#=============allow Multiple IMS property===========
+persist.vendor.mims_support u:object_r:mtk_mims_prop:s0
+
+#=============allow Multiple IMS property===========
+persist.vendor.mtk_dynamic_ims_switch u:object_r:mtk_dynims_prop:s0
+
+#=============allow Multiple IMS property===========
+ro.vendor.mtk_external_sim_support u:object_r:mtk_extsim_prop:s0
+ro.vendor.mtk_external_sim_only_slots u:object_r:mtk_extsim_prop:s0
+ro.vendor.mtk_non_dsda_rsim_support u:object_r:mtk_extsim_prop:s0
+ro.vendor.mtk_persist_vsim_disabled u:object_r:mtk_extsim_prop:s0
+
+#=============allow IMS/EIMS pdn info property==========
+vendor.ims.eims.pdn.info u:object_r:mtk_ims_eims_pdn_prop:s0
+
+#=============allow Modem Monitor property===========
+persist.vendor.mdmmonitor u:object_r:config_prop:s0
+ro.vendor.mtk_modem_monitor_support u:object_r:mtk_mdm_prop:s0
+ro.vendor.mtk_single_bin_modem_support u:object_r:mtk_mdm_prop:s0
+
+#=============allow Modem World Mode property===========
+ro.vendor.mtk_md_world_mode_support u:object_r:mtk_mdworldmode_prop:s0
+
+##OMA DRM
+ro.vendor.mtk_oma_drm_support u:object_r:mtk_oma_drm_support_prop:s0
+vendor.drm.forwardlock.only u:object_r:mtk_drm_fwd_lock_only_prop:s0
+
+#=============allow settings to get relevant property===========
+ro.vendor.mtk_miravision_support u:object_r:mtk_miravision_support_prop:s0
+ro.vendor.mtk_aod_support u:object_r:mtk_aod_support_prop:s0
+ro.vendor.mtk_default_write_disk u:object_r:mtk_default_write_disk_prop:s0
+ro.vendor.mtk_bg_power_saving_support u:object_r:mtk_bg_power_saving_support_prop:s0
+ro.vendor.mtk_bg_power_saving_ui u:object_r:mtk_bg_power_saving_ui_prop:s0
+ro.vendor.mtk_besloudness_support u:object_r:mtk_besloudness_support_prop:s0
+ro.vendor.mtk_hifiaudio_support u:object_r:mtk_hifiaudio_support_prop:s0
+ro.vendor.mtk_active_noise_cancel u:object_r:mtk_active_noise_cancel_prop:s0
+ro.vendor.mtk_wapi_support u:object_r:mtk_wapi_support_prop:s0
+
+#=============allow FastDormancy support property===============
+ro.vendor.mtk_fd_support u:object_r:mtk_fd_support_prop:s0
+
+#=============allow wappush property===========
+ro.vendor.mtk_wappush_support  u:object_r:mtk_wappush_prop:s0
+
+#=============allow MD Number Protocol===============
+ro.vendor.num_md_protocol u:object_r:num_md_protocol_prop:s0
+
+#=============allow NFC related property===========
+persist.vendor.st_nfc_gsma_support u:object_r:mtk_st_nfc_gsma_support_prop:s0
+persist.vendor.st_nfc_ignore_modem u:object_r:mtk_st_nfc_ignore_modem_prop:s0
+ro.vendor.mtk_nfc_addon_support u:object_r:mtk_nfc_addon_support_prop:s0
+ro.vendor.mtk_uicc_clf u:object_r:mtk_nfc_uicc_clf_prop:s0
+persist.vendor.radio.seapi.off u:object_r:mtk_radio_seapi_off_prop:s0
+persist.vendor.nxp_nfc_gsma_support u:object_r:mtk_nxp_nfc_gsma_support_prop:s0
+
+#=============MTK operator property===========
+ro.vendor.operator.  u:object_r:mtk_operator_prop:s0
+
+#=============allow vendor_init to set ro.vendor.mtk_system_update_support==============
+ro.vendor.mtk_system_update_support u:object_r:mtk_system_update_support_prop:s0
+
+#=============allow vendor_init to set ro.vendor.mtk_omacp_support==============
+ro.vendor.mtk_omacp_support u:object_r:mtk_omacp_support_prop:s0
+
+#=============allow libudf property===========
+persist.vendor.debug.fdleak         u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.fdleak.program u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.fdleak.bt2log  u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.fdleak.thd     u:object_r:mtk_libudf_prop:s0
+persist.vendor.libc.debug.malloc    u:object_r:mtk_libudf_prop:s0
+persist.vendor.libc.debug15.prog    u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug15.config       u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug15.config.file  u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug15.statis       u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.mmap           u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.mmap.program   u:object_r:mtk_libudf_prop:s0
+persist.vendor.debug.mmap.config    u:object_r:mtk_libudf_prop:s0
+
+#=============allow printk property===========
+persist.vendor.uartconsole.enable   u:object_r:mtk_printk_prop:s0
+
+#fm vibspk support
+ro.vendor.mtk_vibspk_support u:object_r:mtk_default_prop:s0
+
+#fm 50khz support
+ro.vendor.mtk_fm_50khz_support u:object_r:mtk_default_prop:s0
+
+#=============MTK camera property===========
+vendor.camera.save.temp.video  u:object_r:mtk_camera_prop:s0
+vendor.camera_af_power_debug  u:object_r:mtk_camera_prop:s0
+vendor.com.mediatek.gesture.pose  u:object_r:mtk_camera_prop:s0
+vendor.debug.dualcam.mode  u:object_r:mtk_camera_prop:s0
+vendor.debug.mtkcam.loglevel  u:object_r:mtk_camera_prop:s0
+vendor.mtkcamapp.cshot.platform  u:object_r:mtk_camera_prop:s0
+vendor.mtkcamapp.cshot.version  u:object_r:mtk_camera_prop:s0
+vendor.debug.stereo.single_main2  u:object_r:mtk_camera_prop:s0
+vendor.debug.surface.enabled  u:object_r:mtk_camera_prop:s0
+vendor.debug.thumbnailFromYuv.enable  u:object_r:mtk_camera_prop:s0
+vendor.lomoeffect.  u:object_r:mtk_camera_prop:s0
+vendor.mtk.camera.app.  u:object_r:mtk_camera_prop:s0
+vendor.multizone.af.window.ratio  u:object_r:mtk_camera_prop:s0
+persist.vendor.mtkcamapp.loglevel  u:object_r:mtk_camera_prop:s0
+persist.vendor.mtk_camera_app_version  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_cfb  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_dualdenoise_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_dualzoom_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_mfb_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_native_pip_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_vfb  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_camera_app_api_version  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_camera_app_version  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_emulator_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_fat_on_nand  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_multiwindow  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_slow_motion_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_zsdhdr_support  u:object_r:mtk_camera_prop:s0
+ro.vendor.mtk_cam_lomo_support  u:object_r:mtk_camera_prop:s0
+vendor.vdo.cam.effect  u:object_r:mtk_camera_prop:s0
+vendor.mtk.client.appmode u:object_r:mtk_camera_prop:s0
+
+#=============MTK gallery property===========
+vendor.debug.gallery.loglevel  u:object_r:mtk_gallery_prop:s0
+vendor.gallery.log.enable  u:object_r:mtk_gallery_prop:s0
+
+#=============MTK media property===========
+vendor.debug.log_delete  u:object_r:mtk_media_prop:s0
+vendor.debug.log_insert  u:object_r:mtk_media_prop:s0
+vendor.debug.log_query  u:object_r:mtk_media_prop:s0
+vendor.debug.log_scan  u:object_r:mtk_media_prop:s0
+vendor.debug.log_update  u:object_r:mtk_media_prop:s0
+
+#=============allow system apps read PrivacyProtectionLock property============
+ro.vendor.mtk_privacy_protection_lock u:object_r:mtk_default_prop:s0
+
+#=============allow RSC property===========
+ro.vendor.sys.current_rsc_path  u:object_r:mtk_rsc_prop:s0
+ro.vendor.vnd.current_rsc_path  u:object_r:mtk_rsc_prop:s0
+
+#=============allow system server read dhcp property ============
+persist.vendor.net.dhcp.renew u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_dhcpv6c_wifi u:object_r:mtk_default_prop:s0
+
+#=============allow AMS dynamic enable log property===========
+persist.vendor.sys.activitylog u:object_r:mtk_amslog_prop:s0
+
+#=============allow AMS-aal dynamic enable property===========
+persist.vendor.sys.mtk_app_aal_support u:object_r:mtk_amsaal_prop:s0
+
+#=============MTK PMS property===========
+persist.vendor.pms_removable  u:object_r:mtk_pms_prop:s0
+ro.vendor.mtk_carrierexpress_inst_sup u:object_r:mtk_pms_prop:s0
+
+#=============CT SelfRegister property===========
+ro.vendor.mtk_ct4greg_app u:object_r:mtk_default_prop:s0
+ro.vendor.mtk_devreg_app u:object_r:mtk_default_prop:s0
+persist.vendor.radio.selfreg u:object_r:mtk_selfreg_prop:s0
+
+#=============MTK CDMA Less property===========
+persist.vendor.vzw_device_type u:object_r:persist_vendor_vzw_device_type:s0
+
+#=============allow RTT property==============
+persist.vendor.mtk_rtt_support    u:object_r:mtk_rtt_prop:s0
+
+#=============CTM property===========
+persist.vendor.ctm_slot_flag u:object_r:mtk_ctmslot_prop:s0
+
+#=============MTK UCE property===========
+persist.vendor.mtk_uce_support u:object_r:mtk_uce_support_prop:s0
+
+#=============MTK CLIENTAPI property===========
+persist.vendor.mtk_clientapi_support u:object_r:mtk_clientapi_support_prop:s0
+
+#=============USB CBA property===========
+ro.vendor.mtk_usb_cba_support u:object_r:mtk_default_prop:s0
+persist.vendor.sys.usb.activation u:object_r:mtk_cba_activation:s0
+
+#=============CDMA property===========
+vendor.cdma. u:object_r:cdma_prop:s0
+vendor.cdma.icc.operator.mcc u:object_r:vendor_cdma_prop:s0
+
+#=============ECBM property==============
+vendor.ril.cdma.inecmmode_by_slot u:object_r:mtk_cdma_ecm_prop:s0
+
+#=============MTK RCS property==============
+persist.vendor.mtk_rcs_support u:object_r:mtk_rcs_support_prop:s0
+persist.vendor.service.rcs u:object_r:service_rcs_prop:s0
+persist.vendor.service.tag.rcs u:object_r:service_rcs_prop:s0
+persist.vendor.service.tag.rcs.2 u:object_r:service_rcs_prop:s0
+persist.vendor.active.rcs.slot.id u:object_r:service_rcs_prop:s0
+
+#=============MTK World Phone property===========
+persist.vendor.radio.wm_selectmode  u:object_r:mtk_world_phone_prop:s0
+persist.vendor.radio.wm_fddtimer  u:object_r:mtk_world_phone_prop:s0
+
+#=============MTK Capability Switch property===========
+persist.vendor.radio.unlock  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.unlock.roaming  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.wait.imsi  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.waitimsi.roaming  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.sim.status  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.new.sim.slot  u:object_r:mtk_capability_switch_prop:s0
+vendor.ril.imsi.status.  u:object_r:mtk_capability_switch_prop:s0
+persist.vendor.radio.simswitchstate  u:object_r:mtk_capability_switch_prop:s0
+
+#=============allow data shaping property==============
+persist.vendor.datashaping u:object_r:mtk_datashaping_prop:s0
+#=============MTK IMS Config Provision property===========
+persist.vendor.mtk.provision. u:object_r:mtk_provision_prop:s0
+
+#=============allow wfd hybrid encode property=============
+ro.vendor.mtk_hybrid_encode_support u:object_r:mtk_default_prop:s0
+
+# allow netdagent to set property
+vendor.net.rndis.client u:object_r:netdagent_prop:s0
+
+# allow get neuropilot property
+ro.vendor.mtk_nn_quant_preferred u:object_r:mtk_nn_quant_preferred_prop:s0
+ro.vendor.mtk_tflite_fuse_pad u:object_r:mtk_nn_quant_preferred_prop:s0
+
+# hdmi service property,used for tablet only
+ro.vendor.mtk_tb_hdmi u:object_r:mtk_default_prop:s0
+
+#=============allow system apps read sim_me_lock_mode property============
+ro.vendor.sim_me_lock_mode u:object_r:mtk_default_prop:s0
+
+#=============MTK CAM Security property=============
+ro.vendor.mtk_cam_security u:object_r:mtk_cam_security_prop:s0
+
+#=============allow subsidylock==============
+persist.vendor.subsidylock    u:object_r:mtk_subsidylock_prop:s0
+persist.vendor.subsidylock.connectivity_status   u:object_r:mtk_subsidylock_prop_connect:s0
+
+#============= meta set atci property ==============
+persist.vendor.service.atci.atm_mode u:object_r:atci_sys_prop:s0
+
+#=============Wi-Fi Hotspot==============
+vendor.wifi.tethering.channel u:object_r:mtk_wifi_hotspot_prop:s0
+
+#=============Telephony Add-on===========
+ro.vendor.mtk_telephony_add_on_policy  u:object_r:mtk_telephony_addon_prop:s0
+ro.vendor.mtk_telephon_add_on_pkg_file  u:object_r:mtk_telephony_addon_prop:s0
+
+#=============allow get ro.vendor.mtk_cta_support===============
+ro.vendor.mtk_cta_support u:object_r:mtk_cta_support_prop:s0
+
+#=============allow persist.vendor.heavy.loading.support===============
+persist.vendor.heavy.loading. u:object_r:mtk_heavy_loading_prop:s0
+
+#============all emcamera set camera prop=====================
+vendor.debug.camera. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.cameng. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.lsc_mgr.  u:object_r:mtk_emcamera_prop:s0
+vendor.debug.ae. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.ae_mgr. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.awb_mgr. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.hdr u:object_r:mtk_emcamera_prop:s0
+vendor.debug.shot. u:object_r:mtk_emcamera_prop:s0
+vendor.debug.eis. u:object_r:mtk_emcamera_prop:s0
+persist.vendor.mtkcam. u:object_r:mtk_emcamera_prop:s0
+
+#============allow jpeg dec opt. property=========
+ro.vendor.jpeg_decode_sw_opt u:object_r:mtk_jpeg_opt_prop:s0
+
+#=============allow TEE property===========
+ro.vendor.mtk_trustonic_tee_support u:object_r:ro_vendor_mtk_trustonic_tee_prop:s0
+ro.vendor.mtk_microtrust_tee_support u:object_r:ro_vendor_mtk_microtrust_tee_prop:s0
+
+#============ACS property==================
+persist.vendor.mtk_acs_version u:object_r:mtk_acs_version_prop:s0
+persist.vendor.mtk_acs_support u:object_r:mtk_acs_support_prop:s0
+persist.vendor.mtk_acs_url u:object_r:mtk_acs_url_prop:s0
+#line 1 "vendor/mediatek/proprietary/modem/mt6739_sp_lwg_umoly0164_prod/sepolicy/q0/property_contexts"
+#=============allow wifi offload deamon  ==============
+vendor.wo.   u:object_r:mtk_wod_prop:s0
+persist.vendor.wo.   u:object_r:persist_wod_prop:s0
+
+#=============allow volte deamon  ==============
+ctl.vendor.volte_imcb          u:object_r:ctl_volte_imcb_prop:s0
+ctl.vendor.volte_stack         u:object_r:ctl_volte_stack_prop:s0
+ctl.vendor.volte_ua            u:object_r:ctl_volte_ua_prop:s0
+vendor.ril.volte.              u:object_r:volte_prop:s0
+
+#=============allow MD APP==============
+ro.vendor.md_apps.             u:object_r:mtk_default_prop:s0
+vendor.md_apps.                u:object_r:mtk_default_prop:s0
+
+#=============allow MD status==============
+vendor.volte_md_status         u:object_r:mtk_md_status_prop:s0
+#line 1 "device/tinno/u318/sepolicy/non_plat/property_contexts"
+#masterflag property
+#vendor.trustonic.googlekey.status            u:object_r:master_flag_prop:s0
+vendor.trustonic.googlekey.status            u:object_r:mtk_default_prop:s0
+vendor.trustonic.widevinekey.status            u:object_r:mtk_default_prop:s0
+vendor.efuse.status                           u:object_r:mtk_default_prop:s0
+
+#kph key flag property
+#vendor.trustonic.kphkey.status            u:object_r:kph_flag_prop:s0
+vendor.trustonic.kphkey.status            u:object_r:mtk_default_prop:s0
+#line 1 "system/sepolicy/reqd_mask/property_contexts"
+# empty property_contexts file - this file is used to generate an empty
+# non-platform property context for devices without any property_contexts
+# customizations.
